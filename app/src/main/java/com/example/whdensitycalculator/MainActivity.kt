@@ -17,13 +17,24 @@ class MainActivity : AppCompatActivity() {
         val numOne = findViewById<EditText>(R.id.numOne)
         val numTwo = findViewById<EditText>(R.id.numTwo)
 
-        calcButton.setOnClickListener()
+        calcButton.setOnClickListener {
+            callActivity2()
+        }
 
 
-            val intent = Intent(this@MainActivity, SecondActivity)
-            )
 
     }
+
+    private fun callActivity2() {
+        val editTextOne = findViewById<EditText>(R.id.numOne)
+        val numbOneEt = editTextOne.text.toString()
+
+        val intent = Intent(this, SecondActivity::class.java).also {
+            it.putExtra("Extra_Message", numbOneEt)
+            startActivity(it)
+        }
+    }
+}
 
 
 

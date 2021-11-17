@@ -8,4 +8,6 @@
     <string name="second_number">Second Number</string>
     <string name="calculate">Calculate</string>
     <string name="clear">Clear</string>
+    <string name="result">Result:</string>
+    <string name="go_back">Go Back</string>
 </resources>
