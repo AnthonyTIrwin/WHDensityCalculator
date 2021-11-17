@@ -10,14 +10,12 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="111dp"
-        android:layout_marginTop="155dp"
-        android:layout_marginEnd="111dp"
-        android:layout_marginBottom="171dp"
-        android:text="@string/result"
+        android:layout_marginStart="113dp"
+        android:layout_marginTop="165dp"
+        android:layout_marginEnd="96dp"
+        android:text="Results"
         android:textSize="60sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/btnGoBack"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -27,11 +25,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="205dp"
+        android:layout_marginTop="361dp"
         android:layout_marginEnd="206dp"
+        android:layout_marginBottom="325dp"
         android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnGoBack"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnGoBack"
@@ -39,8 +40,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="155dp"
         android:layout_marginEnd="156dp"
-        android:layout_marginBottom="277dp"
-        android:text="@string/go_back"
+        android:layout_marginBottom="108dp"
+        android:text="Go Back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
