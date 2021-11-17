@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">WHDensityCalculator</string>
+    <string name="h2o_density_calculator">H2O Density Calculator</string>
+    <string name="temperature_in_f">Temperature in F</string>
+    <string name="weight_in_lbs">Weight in Lbs</string>
+    <string name="first_number">First Number</string>
+    <string name="lab_calculator">Lab Calculator</string>
+    <string name="second_number">Second Number</string>
+    <string name="calculate">Calculate</string>
+    <string name="clear">Clear</string>
+</resources>
