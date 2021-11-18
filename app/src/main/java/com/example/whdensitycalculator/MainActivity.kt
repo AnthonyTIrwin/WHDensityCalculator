@@ -3,7 +3,6 @@ package com.example.whdensitycalculator
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
 import android.widget.EditText
 
@@ -18,8 +17,8 @@ class MainActivity : AppCompatActivity() {
 
         //handle calculate button click
         calcButton.setOnClickListener {
-            val numbOneEt = numOne.text.toString()
-            val numTwoEt = numTwo.text.toString()
+            val numbOneEt = numOne.text.toString().toInt()
+            val numTwoEt = numTwo.text.toString().toInt()
             val intent = Intent(this, SecondActivity::class.java)
             intent.putExtra("NUM_ONE", numbOneEt)
             intent.putExtra("NUM_TWO", numTwoEt)

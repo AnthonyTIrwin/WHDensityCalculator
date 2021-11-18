@@ -3,9 +3,7 @@ package com.example.whdensitycalculator
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
-import android.widget.EditText
 import android.widget.TextView
 
 class SecondActivity : AppCompatActivity() {
@@ -15,16 +13,16 @@ class SecondActivity : AppCompatActivity() {
 
 
         //  variables
+
+
         val bacBtn = findViewById<Button>(R.id.btnGoBack)
-        val numOne = intent.getStringExtra("NUM_ONE")
-        val numTwo = intent.getStringExtra("NUM_TWO")
-        val jkjl = intent.getIntExtra("NUM_ONE")
-        val asd = intent.getIntExtra("NUM_TWO")
+        val numOne = intent.getIntExtra("NUM_ONE", 0)
+        val numTwo = intent.getIntExtra("NUM_TWO", 0)
         val txtResult = findViewById<TextView>(R.id.txtResult)
-        val lk = jkjl + asd
 
+        val added = numOne + numTwo
 
-        txtResult.text = lk.toString()
+        txtResult.text = added.toString()
 
 
 
