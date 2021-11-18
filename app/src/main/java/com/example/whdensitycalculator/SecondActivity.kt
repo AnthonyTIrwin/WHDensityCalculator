@@ -13,29 +13,42 @@ class SecondActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
 
+
+        //  variables
         val bacBtn = findViewById<Button>(R.id.btnGoBack)
+        val numOne = intent.getStringExtra("NUM_ONE")
+        val numTwo = intent.getStringExtra("NUM_TWO")
+        val jkjl = intent.getIntExtra("NUM_ONE")
+        val asd = intent.getIntExtra("NUM_TWO")
+        val txtResult = findViewById<TextView>(R.id.txtResult)
+        val lk = jkjl + asd
 
-        val message = intent.getStringExtra("EXTRA_MESSAGE")
-        val txtResult = findViewById<TextView>(R.id.txtResult).apply {
 
-            text = message
-        }
+        txtResult.text = lk.toString()
+
+
+
+
 
         bacBtn.setOnClickListener {
-
            callMainActivity()
-
         }
+
+
+
     }
 
+
+
+
+
     private fun callMainActivity() {
-        val intent = Intent(this, MainActivity::class.java).also {
-            it.putExtra("Extra_Message", "234")
-            startActivity(it)
-        }
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+    }
 
 
 
 
 
-}}
+}

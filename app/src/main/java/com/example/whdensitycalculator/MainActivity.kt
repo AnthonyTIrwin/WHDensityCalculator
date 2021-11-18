@@ -12,29 +12,21 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
         val calcButton = findViewById<Button>(R.id.btnCalc)
         val numOne = findViewById<EditText>(R.id.numOne)
         val numTwo = findViewById<EditText>(R.id.numTwo)
-2
+
+        //handle calculate button click
         calcButton.setOnClickListener {
-            callActivity2()
+            val numbOneEt = numOne.text.toString()
+            val numTwoEt = numTwo.text.toString()
+            val intent = Intent(this, SecondActivity::class.java)
+            intent.putExtra("NUM_ONE", numbOneEt)
+            intent.putExtra("NUM_TWO", numTwoEt)
+            startActivity(intent)
         }
+    }}
 
-
-
-    }
-
-    private fun callActivity2() {
-        val editTextOne = findViewById<EditText>(R.id.numOne)
-        val numbOneEt = editTextOne.text.toString()
-
-        val intent = Intent(this, SecondActivity::class.java).also {
-            it.putExtra("Extra_Message", numbOneEt)
-            startActivity(it)
-        }
-    }
-}
 
 
 
