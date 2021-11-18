@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         val calcButton = findViewById<Button>(R.id.btnCalc)
         val numOne = findViewById<EditText>(R.id.numOne)
         val numTwo = findViewById<EditText>(R.id.numTwo)
-
+2
         calcButton.setOnClickListener {
             callActivity2()
         }
