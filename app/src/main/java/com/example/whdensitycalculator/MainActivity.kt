@@ -12,8 +12,16 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val calcButton = findViewById<Button>(R.id.btnCalc)
+        val clrButton = findViewById<Button>(R.id.btnClear)
         val numOne = findViewById<EditText>(R.id.numOne)
         val numTwo = findViewById<EditText>(R.id.numTwo)
+
+        //clear editTexts of data with btnClear
+        clrButton.setOnClickListener{
+            numOne.setText(" ")
+            numTwo.setText(" ")
+
+        }
 
         //handle calculate button click
         calcButton.setOnClickListener {
