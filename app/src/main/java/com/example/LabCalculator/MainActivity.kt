@@ -1,4 +1,4 @@
-package com.example.whdensitycalculator
+package com.example.LabCalculator
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         val clrButton = findViewById<Button>(R.id.btnClear)
         val numOne = findViewById<EditText>(R.id.numOne)
         val numTwo = findViewById<EditText>(R.id.numTwo)
+
 
         //clear editTexts of data with btnClear
         clrButton.setOnClickListener{

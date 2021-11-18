@@ -1,4 +1,4 @@
-package com.example.whdensitycalculator
+package com.example.LabCalculator
 
 import org.junit.Test
 
