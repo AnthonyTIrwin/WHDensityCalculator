@@ -11,6 +11,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        //Assignments
         val calcButton = findViewById<Button>(R.id.btnCalc)
         val clrButton = findViewById<Button>(R.id.btnClear)
         val numOne = findViewById<EditText>(R.id.numOne)
